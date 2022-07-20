@@ -1,0 +1,25 @@
+<section class="flex relative min-h-screen bg-home h-full w-full bg-cover lg:bg-center">
+
+    <div class="w-full mx-auto px-6 xl:px-0 lg:max-w-screen-lg 2xl:max-w-screen-xl flex-1 flex items-center">
+
+        <div class="space-y-2 -mt-40">
+
+            <h1 class="text-4xl xl:text-6xl font-bold text-white">Marketing Digital</h1>
+            <h3 class="text-2xl xl:text-4xl tracking-wider font-bold text-white"><span class="text-blue-600">Conferencia</span> {{finishDate | date: 'YYYY'}}</h3>
+
+            <div class="flex flex-col md:flex-row md:space-x-2">
+                <h3 class="text-md xl:text-xl tracking-wide font-bold text-white">{{ finishDate | date: 'fullDate': '-0300':'es-CL' }}</h3>
+                <h3 class="text-md xl:text-xl tracking-wide font-bold text-white">09:00 am - 18:00 pm</h3>
+            </div>
+            
+            <div class="flex pt-4 space-x-4">
+                <button class="btn-blue-md tracking-wider xl:text-base">Tickets</button>
+                <button class="btn-gray-md tracking-wider xl:text-base">Más info..</button>
+            </div>
+        </div>
+    </div>
+
+    <app-social-media class="hidden xl:block"></app-social-media>
+
+    <app-countdown></app-countdown>                
+</section>

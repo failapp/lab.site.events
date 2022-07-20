@@ -1,0 +1,24 @@
+<div class="absolute w-full xl:w-3/5 2xl:w-2/5 right-0 bottom-0 flex">
+    <div class="bg-amber-400 w-full h-64 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 md:h-40">
+
+        <div class="h-full flex flex-col items-center justify-center space-y-2">
+            <span class="text-white text-4xl font-medium">{{ timer.days }}</span>
+            <span class="text-white text-sm font-light">Días</span>
+        </div>
+        
+        <div class="h-full flex flex-col items-center justify-center space-y-2">
+            <span class="text-white text-4xl font-medium">{{ timer.hours }}</span>
+            <span class="text-white text-sm font-light">Horas</span>
+        </div>
+
+        <div class="h-full flex flex-col items-center justify-center space-y-2">
+            <span class="text-white text-4xl font-medium">{{ timer.minutes }}</span>
+            <span class="text-white text-sm font-light">Minutos</span>
+        </div>
+
+        <div class="h-full w-full flex flex-col items-center justify-center space-y-2 bg-white">
+            <span class="text-gray-800 text-4xl font-medium">{{ timer.seconds }}</span>
+            <span class="text-gray-800 text-sm font-light">Segundos</span>
+        </div>                        
+    </div>
+</div>

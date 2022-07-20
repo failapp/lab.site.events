@@ -1,0 +1,72 @@
+<section class="flex min-h-screen bg-white">
+    
+
+    <div class="flex flex-col w-full">
+
+        <div class="sm:px-10 md:px-0 h-full lg:h-3/4 pt-10 lg:pt-32 w-full flex flex-col lg:flex-row lg:justify-center lg:max-w-screen-xl mx-auto">
+                        
+            <div class="relative flex w-full md:w-2/4 lg:w-1/3">
+
+                <div class="bg-blue-600 h-40 w-5 -m-4 z-0 absolute lg:w-32 sm:-m-10">
+                </div>
+                
+                <div class=" hidden bg-gray-200 w-full h-full z-0 lg:block">
+                    <img src="assets/img/event-1.jpg" class="absolute object-cover h-full w-full" alt="">                                
+                </div>
+
+            </div>
+
+
+            <div class="relative flex flex-col w-full lg:pl-10 lg:w-2/4">
+
+                <div class="flex flex-col max-w-sm mx-auto pt-5 pb-10 sm:max-w-xl">
+
+                    <h4 class="text-xl font-medium text-amber-400">Bienvenidos</h4>
+                    <h1 class="text-3xl font-bold text-gray-800" >Marketing Digital {{ finishDate | date: 'YYYY' }}</h1>
+
+                    <p class="pt-6 text-gray-700">Quienes nos desempeñamos en el ámbito sabemos que la única regla que no cambia en el marketing digital es que: <span class="font-bold">todo cambia</span>. Por ello, consideramos que no hay mejor manera de crecer profesionalmente que experimentar una lluvia de información en un evento, ya sea en vivo o virtual.</p>
+
+                    <p class="pt-4 text-gray-700">Así que comienza a marcar las fechas de tu calendario con estos eventos y conferencias mundiales de marketing digital imperdibles en {{ finishDate | date: 'YYYY' }}.</p>
+                    <p class="pt-4 text-gray-700">Durante más de 16 horas podrás aprender en directo sobre email marketing, social ads, copywriting, funnel de ventas, SEO, Google Ads y redes sociales.</p>
+
+                    <p class="pt-4 text-gray-700">¿Estás preparado para aprender de referentes del sector las últimas tendencias, técnicas y estrategias de marketing digital?</p>
+
+                </div>
+                
+
+                <div class="lg:absolute bottom-0 left-0 flex justify-center items-center bg-blue-600 h-24 w-80 ">
+                    <span class="text-white text-lg">20 años de experiencia</span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="lg:h-1/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="relative w-full h-72 lg:h-full">
+                <img class="absolute inset-0 w-full h-full object-cover object-bottom" 
+                src="assets/img/event-2.jpg" alt="">
+            </div>
+
+            <div class="relative bg-gray-500 w-full h-72 lg:h-full">
+                <img class="absolute mix-blend-overlay inset-0 w-full h-full object-cover" 
+                src="assets/img/event-4.jpg" alt="">
+            </div>
+            
+            <div class="relative w-full h-72 lg:h-full">
+                <img class="absolute inset-0 w-full h-full object-cover" 
+                src="assets/img/event-3.jpg" alt="">
+            </div>
+
+            <div class="relative w-full h-72 lg:h-full">
+                <img class="absolute inset-0 w-full h-full object-cover object-bottom" 
+                src="assets/img/event-5.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

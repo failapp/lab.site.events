@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.nav-item {
+    display: inline-block;
+}
+.nav-item::after {
+    content: '';
+    @apply bg-gray-100 block h-0.5 w-0;
+    transition: width .3s;
+}
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-active {
+    display: inline-block;
+}
+.nav-active::after {
+    content: '';
+    @apply bg-gray-100 block h-0.5 w-full;
+    transition: width .3s;
+}
+
+
+
+.nav-item-2 {
+    display: inline-block;
+}
+.nav-item-2::after {
+    content: '';
+    @apply bg-blue-600 block h-0.5 w-0;
+    transition: width .3s;
+}
+.nav-item-2:hover::after {
+    width: 100%;
+}
+.nav-active-2 {
+    display: inline-block;
+}
+
+.nav-active-2 a {
+    @apply text-blue-600;
+}
+
+.nav-active-2::after {
+    content: '';
+    @apply bg-blue-600 block h-0.5 w-full;
+    transition: width .3s;
+}
+
+
+
+
+.btn-blue-sm {
+    @apply bg-blue-600 text-white active:bg-blue-700 font-medium text-sm px-4 py-2 rounded hover:bg-blue-800 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150;
+}
+
+.btn-blue-md {
+    @apply bg-blue-600 text-white active:bg-blue-700 font-bold text-sm px-6 py-3 rounded hover:bg-blue-800 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150;
+}
+
+.btn-blue-lg {
+    @apply bg-blue-600 text-white active:bg-blue-700 font-bold text-base px-8 py-3 rounded hover:bg-blue-800 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150
+}
+
+.btn-gray-md {
+    @apply bg-gray-100 text-gray-800 active:bg-gray-200 font-medium text-sm px-8 py-3 rounded hover:bg-gray-300 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150
+}
+
+.btn-gray-lg {
+    @apply bg-gray-100 text-gray-800 active:bg-gray-200 font-medium text-base px-8 py-3 rounded hover:bg-gray-300 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150
+}
+
+
+.bg-menu-mobile {
+    background-color: #222328;
+}
